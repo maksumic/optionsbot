@@ -4,7 +4,6 @@
             <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
-
     <appender name="DEBUG_FILE" class="ch.qos.logback.core.FileAppender">
         <file>.logs/debug.log</file>
         <append>true</append>
@@ -17,7 +16,6 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-
     <appender name="INFO_FILE" class="ch.qos.logback.core.FileAppender">
         <file>.logs/info.log</file>
         <append>true</append>
@@ -30,7 +28,6 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-
     <appender name="WARN_FILE" class="ch.qos.logback.core.FileAppender">
         <file>.logs/warn.log</file>
         <append>true</append>
@@ -43,7 +40,6 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-
     <appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
         <file>.logs/error.log</file>
         <append>true</append>
@@ -56,7 +52,6 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-
     <root level="debug">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="DEBUG_FILE" />
